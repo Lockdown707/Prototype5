@@ -32,6 +32,7 @@ public class GameManagerX : MonoBehaviour
         UpdateScore(0);
         titleScreen.SetActive(false);
         StartTimer();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // While game is active spawn a random target
